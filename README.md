@@ -20,22 +20,6 @@ The goal of this project is to analyze Spotify music trends such as:
 ---
 
 
----
-
-## 🖼️ Screenshots (Dummy Images)
-
-### **📸 Screenshot 1 — Data Preview**
-![Screenshot 1](images/Sc1.png)
-
----
-
-### **📸 Screenshot 2 — Query Execution Output**
-![Screenshot 2](images/Sc2.png)
-
----
-
-### **📸 Screenshot 3 — ER Diagram (Placeholder)**
-![Screenshot 3](images/Sc3.png)
 
 ---
 
@@ -88,6 +72,7 @@ Below is a clean list of **all analytical questions** that were answered using S
 # 🚀 Query Optimization & Performance Improvement
 
 To improve query performance for artist-based filtering and sorting, an index was created on the `artist` column.
+The EXPLAIN ANALYZE output clearly showed a sequential scan, meaning PostgreSQL scanned the entire table to filter rows for the artist "Gorillaz".
 
 ### 🔧 **Query Used for Benchmarking**
 ```sql
@@ -101,11 +86,26 @@ WHERE artist = 'Gorillaz'
 ORDER BY stream DESC
 LIMIT 25;
 ```
-## ⏱️ Before Index
+## ⏱️ Before Index-Optimisation
 Planning Time: 0.106 ms  
 Execution Time: 2.854 ms
 
-## ⚡ After Index
+## ⚡ After Index-Optimisation
 Planning Time: 0.097 ms  
 Execution Time: 0.076 ms
+
+EXPLAIN ANALYZE helped demonstrate a 97% reduction in execution time after indexing.
+
+### **📸 Screenshot 1 — Data Preview**
+![Screenshot 1](images/Sc1.png)
+
+---
+
+### **📸 Screenshot 2 — Query Execution Output**
+![Screenshot 2](images/Sc2.png)
+
+---
+
+### **📸 Screenshot 3 — ER Diagram (Placeholder)**
+![Screenshot 3](images/Sc3.png)
 
