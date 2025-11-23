@@ -101,7 +101,11 @@ WHERE artist = 'Gorillaz'
 ORDER BY stream DESC
 LIMIT 25;
 ```
----
-#⏱️ Before Index
-Planning Time: 0.106 ms
+## ⏱️ Before Index
+Planning Time: 0.106 ms  
 Execution Time: 2.854 ms
+
+## ⚡ After Index
+Planning Time: 0.097 ms  
+Execution Time: 0.076 ms
+
