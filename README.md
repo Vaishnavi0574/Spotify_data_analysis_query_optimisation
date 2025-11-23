@@ -97,15 +97,15 @@ Execution Time: 0.076 ms
 EXPLAIN ANALYZE helped demonstrate a 97% reduction in execution time after indexing.
 
 ### **📸 Screenshot 1 — Data Preview**
-![Screenshot 1](images/Sc1.png)
+![Screenshot 1](Sc1.png.png)
 
 ---
 
 ### **📸 Screenshot 2 — Query Execution Output**
-![Screenshot 2](images/Sc2.png)
+![Screenshot 2](Sc2.png)
 
 ---
 
 ### **📸 Screenshot 3 — ER Diagram (Placeholder)**
-![Screenshot 3](images/Sc3.png)
+![Screenshot 3](Sc3.png)
 
