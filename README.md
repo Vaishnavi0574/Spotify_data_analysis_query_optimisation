@@ -1,4 +1,4 @@
-<img width="799" height="334" alt="image" src="https://github.com/user-attachments/assets/075296c9-e8dd-4bf1-afb3-e757aa7f8d60" /># 🎵 Spotify SQL Analysis Project  
+# 🎵 Spotify SQL Analysis Project  
 ### PostgreSQL • pgAdmin • Data Cleaning • Analytics • Index Optimization
 
 This project explores Spotify track and artist data using SQL in PostgreSQL (pgAdmin).  
@@ -96,18 +96,18 @@ Execution Time: 0.076 ms
 
 EXPLAIN ANALYZE helped demonstrate a 97% reduction in execution time after indexing.
 
-### **📸 Screenshot 1 — Query Plan - Before Index Creation**
-![Screenshot 1](Sc1.png)
+### **📸 Query Plan - Before Index Creation**
+![Screenshot 1](sc1.png)
 
 ---
-### **📸 Screenshot 1 — Query Plan - After Index Creation**
-![Screenshot 1](Sc2.png)
+### **📸 Query Plan - After Index Creation**
+![Screenshot 1](sc2.png)
 
 ---
 
-### **📸 Screenshot 2 — Structural and graphical analysis**
-![Screenshot 2](Sc3.png)
-![Screenshot 2](Sc4.png)
+### **📸 Structural and graphical analysis**
+![Screenshot 2](sc3.png)
+![Screenshot 2](sc4.png)
 
 ---
 
